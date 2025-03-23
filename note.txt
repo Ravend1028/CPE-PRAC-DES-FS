@@ -1,0 +1,1 @@
+Branches of this repo: main and master, should make the master become main then delete the current main
