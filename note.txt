@@ -1,1 +1,3 @@
-Branches of this repo: main and master, should make the master become main then delete the current main
+- lapadan mo yung gauge
+- lakihan yung fonts
+- i move yung measurement sa gitna
