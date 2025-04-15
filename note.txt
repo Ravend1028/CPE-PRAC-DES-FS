@@ -1,1 +1,5 @@
-Branches of this repo: main and master, should make the master become main then delete the current main
+- separate bp gauge (optional)
+- make a manual gauge / visualization
+
+- deploy ml model
+- api call finalize
