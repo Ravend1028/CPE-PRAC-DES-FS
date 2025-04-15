@@ -1,3 +1,5 @@
-- lapadan mo yung gauge
-- lakihan yung fonts
-- i move yung measurement sa gitna
+- separate bp gauge (optional)
+- make a manual gauge / visualization
+
+- deploy ml model
+- api call finalize
