@@ -1,0 +1,12 @@
+{
+  "name": "cpe-prac-des-ml",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "python -m uvicorn server:app --reload --port 8001"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
