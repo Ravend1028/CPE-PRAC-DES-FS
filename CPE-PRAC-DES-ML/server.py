@@ -1,7 +1,9 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
+import pandas as pd
 import numpy as np
+from fastapi.middleware.cors import CORSMiddleware
 
 # Load the trained model
 model = joblib.load('model.joblib')
@@ -14,6 +16,15 @@ FEATURE_COLUMNS = [
 
 # Create FastAPI instance
 app = FastAPI()
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Or set to ["http://localhost:5173"] for more security
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows POST, GET, OPTIONS, etc.
+    allow_headers=["*"],  # Allows all headers including Content-Type
+)
 
 # Request body schema using Pydantic
 class ModelInput(BaseModel):
