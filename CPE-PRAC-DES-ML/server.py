@@ -10,8 +10,7 @@ model = joblib.load('model.joblib')
 
 # Define the expected input features
 FEATURE_COLUMNS = [
-    'Height (cm)', 'Weight (kg)', 'BMI', 'Systolic BP', 'Diastolic BP',
-    'Pulse Rate', 'Respiratory Rate', 'Body Temperature (°C)', 'Blood Oxygen Level (%)'
+    'Age', 'Sex', 'Smoker', 'Systolic Pressure', 'Diastolic Pressure', 'Pulse Rate', 'Respiratory Rate', 'Body Temperature', 'Weight', 'Height', 'Waist', 'Hips', 'Blood Oxygen Level', 'Waist-to-Hips Ratio', 'BMI'
 ]
 
 # Create FastAPI instance
@@ -47,8 +46,7 @@ def predict(input_data: ModelInput):
 
     # Define output labels
     OUTPUT_COLUMNS = [
-        'Underweight', 'Overweight', 'Obesity', 'Hypertension', 'Hypotension',
-        'Hypoxia', 'Fever', 'Hypothermia', 'Bradycardia', 'Tachycardia', 'Respiratory Distress'
+        'Hypertension', 'Diabetes Mellitus', 'COPD', 'SVI', 'Heart Problems'
     ]
     
     # Return prediction as a dict
