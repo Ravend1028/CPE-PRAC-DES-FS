@@ -3,6 +3,7 @@
     "start": "concurrently \"npm --prefix CPE-PRAC-DES-BE run server\" \"npm --prefix CPE-PRAC-DES-FE run dev\" \"npm --prefix CPE-PRAC-DES-WSS run server\" \"npm --prefix CPE-PRAC-DES-ML run server\""
   },
   "dependencies": {
+    "@reactour/tour": "^3.7.0",
     "concurrently": "^9.1.2",
     "express": "^4.21.2"
   }
