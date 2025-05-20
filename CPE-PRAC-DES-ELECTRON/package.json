@@ -1,0 +1,19 @@
+{
+  "name": "cpe-prac-des-electron",
+  "version": "1.0.0",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "start-app": "concurrently \"npm --prefix ../CPE-PRAC-DES-BE run server\" \"npm --prefix ../CPE-PRAC-DES-FE run dev\" \"npm --prefix ../CPE-PRAC-DES-WSS run server\" \"npm --prefix ../CPE-PRAC-DES-ML run server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "electron": "^36.2.1"
+  }
+}
