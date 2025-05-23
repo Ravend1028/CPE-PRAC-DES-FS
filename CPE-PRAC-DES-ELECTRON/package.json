@@ -6,14 +6,29 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "start-app": "concurrently \"npm --prefix ../CPE-PRAC-DES-BE run server\" \"npm --prefix ../CPE-PRAC-DES-FE run dev\" \"npm --prefix ../CPE-PRAC-DES-WSS run server\" \"npm --prefix ../CPE-PRAC-DES-ML run server\""
+    "start-app": "concurrently \"npm --prefix ../CPE-PRAC-DES-BE run server\" \"npm --prefix ../CPE-PRAC-DES-FE run dev\" \"npm --prefix ../CPE-PRAC-DES-WSS run server\" \"npm --prefix ../CPE-PRAC-DES-ML run server\"",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.example.cpepracdes",
+    "productName": "CPE-PRAC-DES",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "buildResources": "assets",
+      "output": "dist"
+    }
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "CPE Practice and Design 2",
   "dependencies": {
-    "concurrently": "^9.1.2",
-    "electron": "^36.2.1"
+    "concurrently": "^9.1.2"
+  },
+  "devDependencies": {
+    "electron": "^36.3.1",
+    "electron-builder": "^26.0.12"
   }
 }
